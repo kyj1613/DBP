@@ -1,0 +1,97 @@
+.menubar{
+border:none;
+border:0px;
+margin:0px;
+padding:0px;
+font: 67.5% "Lucida Sans Unicode", "Bitstream Vera Sans", "Trebuchet Unicode MS", "Lucida Grande", Verdana, Helvetica, sans-serif;
+font-size:14px;
+font-weight:bold;/* position:relative; */
+}
+
+.menubar ul{
+background: #D6EDC7/* D1E8C2 *//* #D6EAC0 */;
+height:50px; 
+list-style:none;
+margin:0;
+padding:0;    /* position:absolute;  */
+}
+
+.menubar li{
+float:left; 
+padding:0px;
+width: 322px;
+}
+
+.menubar li a{
+background: #D6EDC7/* D1E8C2 *//* #D6EAC0 */;
+color:#000000;
+display:block;
+font-weight:normal;
+line-height:50px;
+margin:0px;
+padding:0px 25px;
+text-align:center;
+text-decoration:none;
+}
+
+.menubar li a:hover, .menubar ul li:hover a{
+background: rgb(71,71,71);
+color:#eef7ee;
+text-decoration:none;
+}
+
+.menubar li ul{
+background: #D6EDC7;
+display:none; /* 평상시에는 드랍메뉴가 안보이게 하기 */
+height:auto;
+padding:0px;
+margin:0px;
+border:0px;
+position:absolute;
+width:200px;
+z-index:200;
+/*top:1em;
+/*left:0;*/
+}
+
+.menubar li:hover ul{
+display:block; /* 마우스 커서 올리면 드랍메뉴 보이게 하기 */
+}
+
+.menubar li li {
+background: #D6EDC7/* F0FFF0 */;
+display:block;
+color:#000000;
+float:none;
+margin:0px;
+padding:0px;
+/* width:200px; */
+width: 322px;
+}
+
+.menubar li:hover li a{
+background:none;   /*부모항목에 마우스 올리고 나서 보여지는 자식의 ..*/
+color:#000000;
+text-align:center;
+}
+
+.menubar li ul a{
+display:block;
+height:50px;
+font-size:12px;
+font-style:normal;
+margin:0px;
+padding:0px 10px 0px 15px;
+text-align:left;
+}
+
+.menubar li ul a:hover, .menubar li ul li:hover a{
+background: rgb(71,71,71);
+border:0px;
+color:#eef7ee;
+text-decoration:none;
+}
+
+.menubar p{
+clear:left;
+}
